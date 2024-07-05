@@ -1,0 +1,51 @@
+/* Base styles */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9; /* Light background for contrast */
+}
+
+h1 {
+  color: #0073e6; /* Primary color for headings */
+  text-align: center;
+  margin-top: 2rem;
+}
+
+table {
+  width: 80%;
+  margin: 2rem auto;
+  border-collapse: collapse;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  border-radius: 10px;
+  overflow: hidden; /* Prevents table content from protruding */
+}
+
+thead {
+  background-color: #0073e6; /* Primary color for table header */
+  color: white;
+}
+
+th, td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #ddd; /* Light border between table rows */
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f2f2f2; /* Alternate background color for table rows */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  table {
+    width: 90%;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  th, td {
+    padding: 0.8rem;
+  }
+}

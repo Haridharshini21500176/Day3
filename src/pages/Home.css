@@ -1,0 +1,23 @@
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .hero-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .hero-text {
+    position: absolute;
+    color: rgb(10, 11, 12);
+    font-size: 3rem;
+    text-align: center;
+  }
+  

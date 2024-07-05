@@ -1,0 +1,65 @@
+/* Base styles */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9; /* Light background for contrast */
+}
+
+h1 {
+  text-align: center;
+  margin-top: 2rem;
+  color: #0073e6; /* Primary color for headings */
+}
+
+.events-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 2rem auto;
+  max-width: 1000px;
+}
+
+.event-card {
+  background-color: #fff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  border-radius: 10px;
+  overflow: hidden; /* Prevents image overflow */
+  margin: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+  width: 300px;
+}
+
+.event-card:hover {
+  transform: translateY(-5px); /* Lift card on hover */
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.event-card img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd; /* Separator line for image */
+}
+
+.event-card h2 {
+  text-align: center;
+  margin: 1rem 0;
+  color: #333; /* Darker text color */
+}
+
+.event-card p {
+  padding: 0 1rem;
+  text-align: center;
+  color: #666; /* Softer text color */
+  line-height: 1.5;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .events-container {
+    justify-content: center;
+  }
+
+  .event-card {
+    width: 90%;
+  }
+}
